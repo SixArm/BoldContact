@@ -1,6 +1,6 @@
 import XCTest
 import Contacts
-@testable import BoldContacts
+@testable import BoldContact
 
 class CNContact_list_postalAddressesTests: XCTestCase {
 

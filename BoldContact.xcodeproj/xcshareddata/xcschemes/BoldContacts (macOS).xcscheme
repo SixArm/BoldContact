@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F472281128A58B4000773693"
-               BuildableName = "BoldContacts.app"
-               BlueprintName = "BoldContacts (macOS)"
-               ReferencedContainer = "container:BoldContacts.xcodeproj">
+               BuildableName = "BoldContact.app"
+               BlueprintName = "BoldContact (macOS)"
+               ReferencedContainer = "container:BoldContact.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "F472282428A58B4100773693"
                BuildableName = "Tests macOS.xctest"
                BlueprintName = "Tests macOS"
-               ReferencedContainer = "container:BoldContacts.xcodeproj">
+               ReferencedContainer = "container:BoldContact.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F472281128A58B4000773693"
-            BuildableName = "BoldContacts.app"
-            BlueprintName = "BoldContacts (macOS)"
-            ReferencedContainer = "container:BoldContacts.xcodeproj">
+            BuildableName = "BoldContact.app"
+            BlueprintName = "BoldContact (macOS)"
+            ReferencedContainer = "container:BoldContact.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F472281128A58B4000773693"
-            BuildableName = "BoldContacts.app"
-            BlueprintName = "BoldContacts (macOS)"
-            ReferencedContainer = "container:BoldContacts.xcodeproj">
+            BuildableName = "BoldContact.app"
+            BlueprintName = "BoldContact (macOS)"
+            ReferencedContainer = "container:BoldContact.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

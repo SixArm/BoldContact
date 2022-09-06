@@ -9,15 +9,15 @@ extension CNContact {
     /// Example:
     ///
     ///     let contact: CNContact = …
-    ///     let urlString: String? = contact.urlAddressesintoBoldContactsUrlString()
+    ///     let urlString: String? = contact.urlAddressesintoBoldContactUrlString()
     ///
     /// The implementation uses a heuristic filter to choose the best URL.
     ///
-    /// 1. A URL address with label "BoldContacts" -> return x
+    /// 1. A URL address with label "BoldContact" -> return x
     ///
-    /// 2. A phone number with label "BoldContacts" -> return "tel://" + x
+    /// 2. A phone number with label "BoldContact" -> return "tel://" + x
     ///
-    /// 3. An email address with label "BoldContacts" -> return "mailto://" + x
+    /// 3. An email address with label "BoldContact" -> return "mailto://" + x
     ///
     /// 4. A URL address with label "FaceTime" -> return x
     ///
@@ -31,14 +31,14 @@ extension CNContact {
     ///
     /// 9. An email address -> return "mailto://" + x
     ///
-    public func intoBoldContactsUrlString() -> String? {
-        if let x = self.urlAddresses.first(where: {$0.labelEquivalent(string: "BoldContacts")}) {
+    public func intoBoldContactUrlString() -> String? {
+        if let x = self.urlAddresses.first(where: {$0.labelEquivalent(string: "BoldContact")}) {
             return parseStringToURLSafeString(string: x.value as String)
         }
-        if let x = self.phoneNumbers.first(where: {$0.labelEquivalent(string: "BoldContacts")}) {
+        if let x = self.phoneNumbers.first(where: {$0.labelEquivalent(string: "BoldContact")}) {
             return "tel://\(parsePhoneNumberStringToURLSafeString(string: x.value.stringValue))"
         }
-        if let x = self.emailAddresses.first(where: {$0.labelEquivalent(string: "BoldContacts")}) {
+        if let x = self.emailAddresses.first(where: {$0.labelEquivalent(string: "BoldContact")}) {
             return "mailto://\(parseEmailAddressStringToURLSafeString(string: x.value as String))"
         }
         if let x = self.urlAddresses.first(where: {$0.labelEquivalent(string: "FaceTime")}) {

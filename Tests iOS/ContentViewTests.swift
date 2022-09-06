@@ -1,7 +1,7 @@
 import XCTest
 import Contacts
 import ViewInspector
-@testable import BoldContacts
+@testable import BoldContact
 
 //extension ContentView: Inspectable {}
 

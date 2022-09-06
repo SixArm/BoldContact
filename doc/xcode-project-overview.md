@@ -4,7 +4,7 @@ This document describes the Xcode project overview of what files we use.
  
 Main:
 
-* BoldContactsApp: the main SwiftUI struct.
+* BoldContactApp: the main SwiftUI struct.
 
 * AppDelegate: typical app delegate, such as for notifications.
 

@@ -1,15 +1,15 @@
-# BoldContacts
+# BoldContact
 
-BoldContacts is an app that helps you browse your contacts and connect with them.
+BoldContact is an app that helps you browse your contacts and connect with them.
 
-BoldContacts is intended for people who experience vision disabilities, cognitive disabilities, or motor disabilities. The app displays each contact with a large photo, large text, and large buttons.
+BoldContact is intended for people who experience vision disabilities, cognitive disabilities, or motor disabilities. The app displays each contact with a large photo, large text, and large buttons.
  
-BoldContacts started because our family members have Alzheimer's disease and Parkinson's disease, and are unable to use the typical contacts app. BoldContacts helps our family keep in touch, and helps caretakers connect with us.
+BoldContact started because our family members have Alzheimer's disease and Parkinson's disease, and are unable to use the typical contacts app. BoldContact helps our family keep in touch, and helps caretakers connect with us.
 
 
 ## Beta Testing
 
-BoldContacts is currently doing beta testing of the iOS app. If you would like a beta testing invitation, and you have a current iPhone or iPad, then please email joel@joelparkerhenderson.com.
+BoldContact is currently doing beta testing of the iOS app. If you would like a beta testing invitation, and you have a current iPhone or iPad, then please email joel@joelparkerhenderson.com.
 
   
 ## Screenshot
@@ -33,13 +33,13 @@ Say yes.
 
 ## Personalization
 
-You can personalize how your BoldContacts app will connect to your contact:
+You can personalize how your BoldContact app will connect to your contact:
 
 1. Launch your typical Apple Contacts app, and edit the contact.
 
 2. Create a new contact field i.e. phone number, or email address, or URL address.
 
-3. Edit the new contact field label to be "BoldContacts".
+3. Edit the new contact field label to be "BoldContact".
 
 
 ## Help Wanted
@@ -64,7 +64,7 @@ Good usability for people who experience cognitive difficulties.<br>Examples:  m
 
 ## About
 
-* Project: BoldContacts
+* Project: BoldContact
 
 * Version: 1.0.0
 

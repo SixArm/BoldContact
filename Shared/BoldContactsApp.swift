@@ -5,7 +5,7 @@ import os
 typealias AppItem = CNContact
 
 @main
-struct BoldContactsApp: App {
+struct BoldContactApp: App {
     let persistenceController = PersistenceController.shared
 
     // Connect to app delegate class defined in AppDelegate.swift
@@ -15,7 +15,7 @@ struct BoldContactsApp: App {
     @State private var cursor = Cursor<AppItem>()
 
     init() {
-        logger.debug("BoldContacts init()")
+        logger.debug("BoldContact init()")
         logger.debug("\(CNContactStore.authorizationStatusMessage(for: .contacts))")
         
 
@@ -28,10 +28,10 @@ struct BoldContactsApp: App {
                 ContentView(cursor:  cursor)
                 .onAppear {
                     Task.init {
-                        logger.debug("BoldContacts store.requestAccess() -> true")
+                        logger.debug("BoldContact store.requestAccess() -> true")
                         do {
                             if try await store.requestAccess(for: .contacts) {
-                                logger.debug("BoldContacts store.requestAccess() -> true")
+                                logger.debug("BoldContact store.requestAccess() -> true")
                                 #if targetEnvironment(simulator)
                                     demoContacts()
                                 #endif
@@ -39,20 +39,20 @@ struct BoldContactsApp: App {
                                 cursor.setCallable(callable: openViaCNContact)
 
                             } else {
-                                logger.debug("BoldContacts store.requestAccess() -> false")
+                                logger.debug("BoldContact store.requestAccess() -> false")
                             }
                         }
                         catch {
-                            logger.debug("BoldContacts store.requestAccess() -> error: \(String(describing: error))")
+                            logger.debug("BoldContact store.requestAccess() -> error: \(String(describing: error))")
                         }
                     }
                 }
             case .restricted:
-                Text("BoldContacts cannot access your contacts because your contact store authorization status is restricted. You can quit the app now. You can launch your Preferences app, and authorize BoldContacts to access your contacts, then relaunch BoldContacts.")
+                Text("BoldContact cannot access your contacts because your contact store authorization status is restricted. You can quit the app now. You can launch your Preferences app, and authorize BoldContact to access your contacts, then relaunch BoldContact.")
             case .denied:
-                Text("BoldContacts cannot access your contacts because your contact store authorization status is denied. You can quit the app now. You can launch your Preferences app, and authorize BoldContacts to access your contacts, then relaunch BoldContacts.")
+                Text("BoldContact cannot access your contacts because your contact store authorization status is denied. You can quit the app now. You can launch your Preferences app, and authorize BoldContact to access your contacts, then relaunch BoldContact.")
             default:
-                Text("BoldContacts cannot access your contacts because of an unknown error. Please contact the app developer to take a closer look at what's happening and how to fix it for you. Email address is joel@joelparkerhenderson.com. Phone number is +1-415-317-2700. Thank you.")
+                Text("BoldContact cannot access your contacts because of an unknown error. Please contact the app developer to take a closer look at what's happening and how to fix it for you. Email address is joel@joelparkerhenderson.com. Phone number is +1-415-317-2700. Thank you.")
             }
         }
     }

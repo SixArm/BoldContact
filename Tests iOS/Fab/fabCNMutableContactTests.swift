@@ -1,5 +1,5 @@
 import XCTest
-@testable import BoldContacts
+@testable import BoldContact
 
 class fabCNMutableContactTests: XCTestCase {
 

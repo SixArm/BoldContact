@@ -1,7 +1,7 @@
 import XCTest
-@testable import BoldContacts
+@testable import BoldContact
 
-class BoldContactsAppTests: XCTestCase {
+class BoldContactAppTests: XCTestCase {
 
     func testExample() throws {
     }
